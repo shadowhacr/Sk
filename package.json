@@ -1,0 +1,30 @@
+{
+  "name": "shadow-evil-ai-bot",
+  "version": "3.0.0",
+  "description": "Shadow Evil AI Bot - Premium Telegram AI Bot with Groq API",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "pm2": "pm2 start bot.js --name shadow-bot"
+  },
+  "keywords": ["telegram-bot", "ai-bot", "groq", "shadow-evil"],
+  "author": "Shadow",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "groq-sdk": "^0.3.0",
+    "adm-zip": "^0.5.10",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "fs-extra": "^11.1.1",
+    "puppeteer": "^21.5.0",
+    "archiver": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
