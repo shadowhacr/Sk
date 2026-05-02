@@ -100,9 +100,9 @@ const UI = {
 
     // Escape markdown
     escape(text) {
-        if (!text) return '';
-        return text.replace(/[_*\[\]()~`>#+=|{}.!-]/g, '\\$&');
-    },
+    if (!text) return '';
+    return text.replace(/([_*\[\]()~`>#+\-=|{}.!])/g, '\\$1');
+}
 
     // Main menu keyboard
     mainMenu() {
